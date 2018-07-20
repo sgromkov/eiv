@@ -1,12 +1,13 @@
 import React from 'react';
+import TableBody from '@material-ui/core/TableBody';
 import Row from './Row';
 
 const Tbody = ({
   rows
 }) => (
-    <tbody>
+    <TableBody>
       {rows.map((item, index) => <Row key={index}>{item}</Row>)}
-    </tbody>
+    </TableBody>
 );
 
 export default Tbody;

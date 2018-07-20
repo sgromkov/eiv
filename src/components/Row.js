@@ -1,12 +1,13 @@
 import React from 'react';
-import Column from './Column';
+import TableRow from '@material-ui/core/TableRow';
+import TableCell from '@material-ui/core/TableCell';
 
 const Row = ({
   children
 }) => (
-  <tr>
-    {children.map((item, index) => <Column key={index}>{item}</Column>)}
-  </tr>
+  <TableRow>
+    {children.map((item, index) => <TableCell key={index}>{item}</TableCell>)}
+  </TableRow>
 );
 
 export default Row;

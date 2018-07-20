@@ -1,10 +1,11 @@
 import React from 'react';
+import Table from '@material-ui/core/Table';
 import VisibleTbody from '../containers/VisibleTbody';
 
 const Table = () => (
-  <table>
+  <Table>
     <VisibleTbody />
-  </table>
+  </Table>
 );
 
 export default Table;
