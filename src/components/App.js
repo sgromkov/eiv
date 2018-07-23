@@ -1,12 +1,13 @@
 import React from 'react';
-import QueryInput from '../containers/QueryInput';
-import Table from './Table';
+import Paper from '@material-ui/core/Paper';
+import SearchField from '../containers/SearchField';
+import FilteredResults from '../containers/FilteredResults';
 
 const App = () => (
-  <div className="app">
-    <QueryInput />
-    <Table />
-  </div>
+  <Paper>
+    <SearchField />
+    <FilteredResults />
+  </Paper>
 );
 
 export default App;

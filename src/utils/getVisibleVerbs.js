@@ -1,4 +1,4 @@
-const getVisibleRows = (
+const getVisibleVerbs = (
   list,
   query
 ) => ((query)?
@@ -8,4 +8,4 @@ const getVisibleRows = (
   list
 );
 
-export default getVisibleRows;
+export default getVisibleVerbs;
