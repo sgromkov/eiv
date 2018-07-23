@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import getVisibleRows from '../utils/getVisibleRows';
+import getVisibleVerbs from '../utils/getVisibleVerbs';
 import Results from '../components/Results';
 
 const mapStateToProps = (state) => ({
-  verbs: getVisibleRows(state.list, state.query)
+  verbs: getVisibleVerbs(state.list, state.query)
 });
 
 const FilteredResults = connect(
